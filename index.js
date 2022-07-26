@@ -15,7 +15,7 @@ const url = process.env.URL;
 mongoose.connect(url).then(()=>console.log("Database Connected")).catch((err)=>console.log(err));
 
 app.get("/addMealItems", async (req, res)=>{
-    const value = await Meal.find({}).populate("foodItems", "calories ");
+    const value = await Meal.find({}).populate("foodItems");
     res.json(value);
 });
 
