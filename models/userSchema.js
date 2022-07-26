@@ -4,6 +4,7 @@ const userSchema = new mongoose.Schema({
     name: String,
     calorieRequirement: Number,
     mealPlan: [{
+        time: Date.now,
         type: mongoose.Schema.Types.ObjectId,
         ref: "meal"
     }],
