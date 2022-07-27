@@ -1,5 +1,6 @@
 const FoodItem = require("../models/foodItemSchema");
 const Meal = require("../models/mealSchema");
+const User = require("../models/userSchema");
 
 exports.addMealItems = (req, res)=>{
         // console.log(req.body);
@@ -7,7 +8,6 @@ exports.addMealItems = (req, res)=>{
             if(err) console.log(err);
             else{
                 console.log(data);
-                // res.send(data);
             }   
         })
         const {category, name, foodItems} = req.body;
@@ -34,4 +34,16 @@ exports.addFoodItems = (req, res)=>{
         res.send(err.message);
     })
 }
-    
+
+exports.addUser = (req, res)=>{
+    console.log(req.body);
+    const {name, calorieRequirement, mealPlan} = req.body;
+    const newUser = new User({name, calorieRequirement, mealPlan});
+    newUser.save().then(()=>{
+        return res.status(201).json({
+            message: "document created successfully"
+        });
+    }).catch((err)=>{
+        res.send(err.message);
+    })
+}
