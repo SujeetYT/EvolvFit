@@ -16,3 +16,8 @@ exports.foodItems = async (req, res)=>{
     const value = await FoodItem.find({});
     res.json(value).status(200);
 }
+
+exports.optimisedForProtien = (req, res)=>{
+    // to be implemented...
+    console.log("Under Construction... ");
+}

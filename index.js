@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require("mongoose");
-const { mealItems, user, foodItems} = require("./controllers/getControllers");
+const { mealItems, user, foodItems, optimisedForProtien} = require("./controllers/getControllers");
 const { addFoodItems, addMealItems, addUser } = require("./controllers/postControllers");
 const { patchMealItems, patchUser } = require("./controllers/patchControllers");
 // const ObjectId = require("mongodb").ObjectId;
@@ -16,6 +16,7 @@ const url = process.env.URL;
 mongoose.connect(url).then(()=>console.log("Database Connected !")).catch((err)=>console.log(err));
 
 // GET Methods
+app.get("/", optimisedForProtien);
 app.get("/foodItems", foodItems);
 app.get("/mealItems", mealItems);
 app.get("/user", user);
