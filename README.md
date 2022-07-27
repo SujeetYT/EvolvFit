@@ -18,6 +18,9 @@ Using the following Command Line
 npm start
 ```
 
+
+# Follow the given tutorial to access the routes
+
 ![Whole DB](./Images/get-all.png)
 ![Patch Meal Item](./Images/patch-mealItem.png)
 ![Patch User](./Images/patch-user.png)
