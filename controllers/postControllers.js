@@ -37,8 +37,8 @@ exports.addFoodItems = (req, res)=>{
 
 exports.addUser = (req, res)=>{
     console.log(req.body);
-    const {name, calorieRequirement, mealPlan} = req.body;
-    const newUser = new User({name, calorieRequirement, mealPlan});
+    const {name, calorieRequirement, time,  mealPlan} = req.body;
+    const newUser = new User({name, calorieRequirement, time, mealPlan});
     newUser.save().then(()=>{
         return res.status(201).json({
             message: "document created successfully"

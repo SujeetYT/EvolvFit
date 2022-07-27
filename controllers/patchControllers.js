@@ -5,7 +5,7 @@ exports.patchMealItems = async (req, res)=>{
     try {
         const _id = req.params.id;
         const updateValue = await Meal.findByIdAndUpdate(_id, req.body);
-        console.log(updateValue, _id); 
+        console.log(updateValue); 
         res.send("Meal Updated");
     } catch (error) {
         res.send(error);

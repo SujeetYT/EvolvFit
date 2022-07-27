@@ -19,5 +19,5 @@ exports.foodItems = async (req, res)=>{
 
 exports.optimisedForProtien = (req, res)=>{
     // to be implemented...
-    console.log("Under Construction... ");
+    res.send("Under Construction... ");
 }
