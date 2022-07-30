@@ -14,6 +14,11 @@ echo >> .env
 ## Run backend on localhost
 Using the following Command Line
 
+Install Dependencies 
+```
+npm i
+```
+Run Backend
 ```
 npm start
 ```
