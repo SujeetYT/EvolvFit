@@ -21,9 +21,9 @@ npm start
 
 # Follow the given tutorial to access the routes
 
-![Whole DB](./Images/get-all.png)
-![Patch Meal Item](./Images/patch-mealItem.png)
-![Patch User](./Images/patch-user.png)
-![Post Add Food Items](./Images/post-addFoodItems.png)
-![Post Add Meal Item](./Images/post-addMealItems.png)
-![Post Add User](./Images//post-addUser.png)
+![Whole DB](Images/get-all.png)
+![Patch Meal Item](Images/patch-mealItem.png)
+![Patch User](Images/patch-user.png)
+![Post Add Food Items](Images/post-addFoodItems.png)
+![Post Add Meal Item](Images/post-addMealItems.png)
+![Post Add User](Images//post-addUser.png)
