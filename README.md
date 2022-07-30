@@ -10,6 +10,10 @@ Using Command Line
 ``` 
 echo >> .env 
 ```
+Setup your own Database on MongoDB and paste the URL in .env
+```
+URL=<Your_MongoDB_Connection_URL>
+```
 
 ## Run backend on localhost
 Using the following Command Line
@@ -22,7 +26,8 @@ Run Backend
 ```
 npm start
 ```
-
+### Tech Stack Used
+> NodeJs, ExpressJs, MongoDB
 
 # Follow the given tutorial to access the routes
 
